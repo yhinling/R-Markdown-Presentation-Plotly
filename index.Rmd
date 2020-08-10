@@ -1,0 +1,22 @@
+---
+title: "Week3 Assignment"
+author: "yhinling"
+date: "Date: 8/9/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown Presentation & Plotly: mtcars dataset
+```{r, echo = FALSE, warning= FALSE, message = FALSE}
+library(plotly)
+data(mtcars)
+
+plot_ly(data = mtcars, x = ~mpg, y = ~disp, z = ~cyl, color = ~hp)
+
+```
+
+## Thank you!
+
